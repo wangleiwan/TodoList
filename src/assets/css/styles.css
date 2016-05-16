@@ -1,0 +1,14 @@
+.header {
+  background-color: #f1f1f1;
+  height: 58px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+ul.navlist li {
+  font-size: 22px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+}

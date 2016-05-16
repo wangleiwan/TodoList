@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
-import dashboard from './dashboard';
+// import dashboard from './dashboard';
+import ToDoList from './ToDoList';
 
 const rootReducer = combineReducers({
-  dashboard,
+  ToDoList,
 });
 
 export default rootReducer;
