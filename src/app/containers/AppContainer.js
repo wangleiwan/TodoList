@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import Header from '../components/Header';
 import TodoList from '../components/TodoList';
+import Grid from '../components/grid';
 import { connect } from 'react-redux';
 // import { VelocityTransitionGroup } from 'velocity-react';
 
@@ -20,11 +21,11 @@ class AppContainer extends Component {
   // }
 
   render() {
-    console.log(this.props.todolist);
     return (
       <div className="container">
         <Header />
         <TodoList todos={this.props.todolist} />
+        <Grid />
       </div>
     );
   }
@@ -38,6 +39,6 @@ const mapStateToProps = (state) => (
 
 AppContainer.propTypes = {
   todolist: PropTypes.array.isRequired,
-}
+};
 
 export default connect(mapStateToProps, null)(AppContainer);

@@ -12,3 +12,7 @@ ul.navlist li {
   display: inline-block;
   margin-left: 15px;
 }
+
+.react-grid-item {
+  border: solid 1px black;
+}
